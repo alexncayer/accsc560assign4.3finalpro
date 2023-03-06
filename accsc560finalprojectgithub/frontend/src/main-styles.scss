@@ -1,0 +1,45 @@
+//main-styles.scss file down below
+//Purpose of this file: Place "where we put global styles and change variable
+//values" (Devstackr, 2019).
+
+//Be able to utilize fonts from a specific URL or in this case
+//"Lato and Nunito" text (Devstackr, 2019).
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+$turquoise: #44ddd0;
+$green: #27d7a1;
+$light-green: #45f69e;
+$dark-green: rgb(0, 100, 80);
+
+$light: #f8f8f8;
+
+//Allows for "Bulma's global variables" to change so they are current
+//(Devstackr, 2019).
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $green;
+
+$link: $turquoise;
+
+//Allows for Bulma's component variables to be up to date (Devstackr, 2019).
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+//Allows for the "custom global styles (will be applied to whole app)"
+//to be applied (Devstackr, 2019).
+
+html { 
+    background: linear-gradient(to right top, $turquoise, $green);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

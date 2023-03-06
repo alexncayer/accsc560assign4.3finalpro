@@ -1,0 +1,103 @@
+<div class="centered-content">
+    <div class="vgorganizergames-manager-container">
+        <div class="sidebar has-background-white">
+            <h1 class="title has-text-primary">
+                Vgorganizer
+            </h1>
+
+            <div class="vgorganizer-menu">
+                <a class="vgorganizer-menu-item is-active">
+                    <p>Game #1</p>
+                </a>
+                <a class="vgorganizer-menu-item">
+                    <p>Game #2</p>
+                </a>
+                <a class="vgorganizer-menu-item">
+                    <p>Game #3</p>
+                </a>
+            </div>
+
+            <button class="button is-primary has-text-white" routerLink="/new-vgorganizer">+ New Game</button>
+            <!--Originally, button comment above had (click)="createNewVgorganizer()" after class..., which linked to statement that once
+            was utilized to create a test user. The part creating a test user has been commented out 
+            in vgorganizer-view.component.ts document-->
+
+        </div>
+
+        <div class="vgorganizerinformation-list-container has-background-light">
+            <div class="top-bar">
+                <h1 class="title has text-primary">
+                    Vgorganizerentryinformation
+                </h1>
+                <div class="dropdown is-hoverable is-right">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true">
+                            <span>Settings</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                        <div class="dropdown-content">
+                            <!--href would be removed if got adding new vgorganizer entry to work (for updating vgorganizer) (Devstackr, 2019)-->
+                            <a routerLink="/edit-vgorganizer" class="dropwdown-item">
+                                Edit
+                            </a>
+                            <!--if adding new vgorganizer entry worked, would add "(click)="onDeleteVgorganizerClick()"" before class part below (Devstackr, 2019)-->
+                            <!--Would also take out "href" if deleting vgorganizer video game entry based on Id (Devstackr, 2019)-->
+                            <a href="#" class="dropwdown-item has-text-danger">
+                                Delete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Vgoranizer Elements-->
+            <div class="vgorganizer">
+                <label class="label">name:</label>
+                <p>Test Test</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">system:</label>
+                <p>Nintendo Switch</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">publisher:</label>
+                <p>ACProductions</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">eshopUSApriceindollars:</label>
+                <p>59.99</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">rating:</label>
+                <p>Everyone</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">owngame:</label>
+                <p>Yes</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">beatmainstory:</label>
+                <p>Yes</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">unitssold:</label>
+                <p>5000</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">releaseyear:</label>
+                <p>2023</p>
+            </div>
+            <div class="vgorganizer">
+                <label class="label">personalratingoutoften:</label>
+                <p>6</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
